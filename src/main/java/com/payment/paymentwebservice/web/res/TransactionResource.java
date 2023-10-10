@@ -27,6 +27,10 @@ public class TransactionResource {
         List<Transaction> transactions = transactionService.findAll();
         return ResponseEntity.ok(transactions);
     }
+    @GetMapping("/transactions/test")
+    public ResponseEntity getMsg() {
+        return ResponseEntity.ok("App connected");
+    }
 
 
 }
